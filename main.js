@@ -83,10 +83,6 @@ function arrayReverser(array) {
 }
 
 
-  }
-}
-
-
 console.assert(arrayReverser(numbers).toString() === '6,5,101,3,11,7,9,18,4,12,1', {'message': 'arrayReverser should return "6,5,101,3,11,7,9,18,4,12,1"'});
 
 
