@@ -120,7 +120,15 @@ console.assert(numbersOver10(numbers).toString() === "12,18,11,101", {'message':
 // Write a function that accepts both an array and number argument
 // and returns an array of only the numbers greater than the number passed to the function
 // A:
-
+function numbersOverX (array, number) {
+  numsOverX = [ ];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > number) {
+      numsOverX.push(array[i]);
+    }
+  }
+  return numsOverX;
+}
 
 console.assert(numbersOverX(numbers, 15).toString() === "18,101", {'message': 'numbersOverX should return "18,101"'});
 
@@ -131,7 +139,10 @@ console.assert(numbersOverX(numbers, 15).toString() === "18,101", {'message': 'n
 var numbers = [1,12,4,18,9,7,11,3,101,5,6];
 var numbersTwo = [33,56,72,2,5,66,90,21,42];
 // A:
-
+function joinArrays([array1, array2]) {
+  let newArray = array1.concat(array2);
+  return newArray;
+}
 
 console.assert(joinArrays([numbers, numbersTwo]).toString() === '1,12,4,18,9,7,11,3,101,5,6,33,56,72,2,5,66,90,21,42', {'message': 'joinArrays should return "1,12,4,18,9,7,11,3,101,5,6,33,56,72,2,5,66,90,21,42"'});
 
@@ -150,13 +161,13 @@ var instructors = [
 ];
 
 var instructorNameDiscipline = instructors[5];
-// greenvIlleInstructor = <your answer>
+// greenvilleInstructor = 'Will', 'JavaScript'
 
 var instructorOne = instructors[4][0];
-// instructorOne = <your answer>
+// instructorOne = 'Dan'
 
 var instructorTwo = instructors[0][1];
-// instructorTwo = <your answer>
+// instructorTwo = 'JavaScript'
 
 var instructorThree = instructors[2][0];
-// instructorThree = <your answer>
+// instructorThree = 'Brit' 
