@@ -74,8 +74,13 @@ console.assert(getEvens(numbers).toString() === '12,4,18,6', {'message': 'getEve
 // A:
 
 function arrayReverser(array) {
+  let newArray = [];
 
   for (let i = array.length - 1 ; i != -1 ; i--) {
+    newArray.push(array[i]);
+  }
+  return newArray;
+}
 
 
   }
@@ -170,4 +175,4 @@ var instructorTwo = instructors[0][1];
 // instructorTwo = 'JavaScript'
 
 var instructorThree = instructors[2][0];
-// instructorThree = 'Brit' 
+// instructorThree = 'Brit'
