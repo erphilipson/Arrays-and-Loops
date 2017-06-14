@@ -18,6 +18,7 @@ function longestString(array) {
       maxString = array[i];
     }
   }
+  return maxString;
 }
 
 
